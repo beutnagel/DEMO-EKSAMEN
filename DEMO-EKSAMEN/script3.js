@@ -36,6 +36,10 @@ fetch("errorcode.json")
     }
   })
 
+  /* TODO: besides console.log, should there also be some message for the user?
+        E.g. Jacob Nielsen's 10 Heuristics, #9 Help users recognize, diagnose, and recover from errors
+    */
+
   .catch((error) => {
     console.error("Could not fetch JSON:", error);
   });
